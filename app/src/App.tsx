@@ -1,6 +1,7 @@
 'use client';
 import { FormEvent, ReactNode, useEffect, useState } from "react";
 import "./index.css";
+import RequestForm from "./RequestForm";
 type IconName =
   | "arrow"
   | "bolt"
@@ -25,7 +26,7 @@ type IconName =
   | "voice"
   | "x";
 
-const iconPaths: Record<IconName, ReactNode> = {
+export const iconPaths: Record<IconName, ReactNode> = {
   arrow: (
     <>
       <path d="M5 12h14M13 6l6 6-6 6" />
@@ -125,7 +126,7 @@ const iconPaths: Record<IconName, ReactNode> = {
   ),
 };
 
-function Icon({ name, size = 20 }: { name: IconName; size?: number }) {
+export  function Icon({ name, size = 20 }: { name: IconName; size?: number }) {
   return (
     <svg
       width={size}
@@ -143,7 +144,7 @@ function Icon({ name, size = 20 }: { name: IconName; size?: number }) {
   );
 }
 
-function Logo({ footer = false }: { footer?: boolean }) {
+export  function Logo({ footer = false }: { footer?: boolean }) {
   return (
     <a
       className={`logo ${footer ? "footer-logo" : ""}`}
@@ -164,7 +165,7 @@ function Logo({ footer = false }: { footer?: boolean }) {
   );
 }
 
-const services = [
+export const services = [
   {
     icon: "bulb" as IconName,
     title: "Smart Lighting Control",
@@ -217,7 +218,7 @@ const services = [
   },
 ];
 
-const faqs = [
+export const faqs = [
   [
     "Can you automate an existing home?",
     "Yes. We design retrofit systems that minimize wall work and disruption. Following a site survey, we specify the appropriate wired, wireless or hybrid approach.",
@@ -244,7 +245,7 @@ const faqs = [
   ],
 ];
 
-function Button({
+export function Button({
   children,
   href,
   variant = "primary",
@@ -276,7 +277,7 @@ function Button({
   );
 }
 
-function SectionHeading({
+export function SectionHeading({
   eyebrow,
   title,
   text,
@@ -388,13 +389,13 @@ function Navbar({
         </div>
       </nav>
       <div className="nav-actions">
-        <button
+        {/* <button
           className="icon-btn language"
           aria-label="Change language"
           onClick={onLanguage}
         >
           {rtl ? "AR" : "EN"} <span>/ {rtl ? "EN" : "AR"}</span>
-        </button>
+        </button> */}
         <ThemeSwitch mode={mode} onChange={onTheme} compact />
         <Button href="#quote">
           Request a consultation <Icon name="arrow" />
@@ -1083,205 +1084,7 @@ function Faq() {
   );
 }
 
-function InputField({
-  label,
-  type = "text",
-  required = false,
-  placeholder,
-}: {
-  label: string;
-  type?: string;
-  required?: boolean;
-  placeholder: string;
-}) {
-  return (
-    <label className="field">
-      <span>
-        {label}
-        {required && <b>*</b>}
-      </span>
-      <input type={type} required={required} placeholder={placeholder} />
-    </label>
-  );
-}
 
-function RequestForm() {
-  const [selected, setSelected] = useState<string[]>(["Lighting"]);
-  const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
-  const submit = (event: FormEvent) => {
-    event.preventDefault();
-    setStatus("loading");
-    window.setTimeout(() => setStatus("success"), 900);
-  };
-  if (status === "success")
-    return (
-      <div className="form-card success-state">
-        <span className="success-icon">
-          <Icon name="check" size={34} />
-        </span>
-        <h3>Request received</h3>
-        <strong className="reference">REFERENCE · ZK-2026-0001</strong>
-        <p>
-          Thank you. We will contact you within 24 business hours to review your
-          requirements.
-        </p>
-        <Button
-          variant="secondary"
-          type="button"
-          onClick={() => setStatus("idle")}
-        >
-          Submit another request
-        </Button>
-      </div>
-    );
-  return (
-    <form className="form-card" onSubmit={submit}>
-      <div className="form-row">
-        <InputField label="Full name" required placeholder="Your full name" />
-        <InputField label="Company / organization" placeholder="Optional" />
-      </div>
-      <div className="form-row">
-        <InputField
-          label="Phone number"
-          type="tel"
-          required
-          placeholder="+20 1XX XXX XXXX"
-        />
-        <InputField
-          label="Email address"
-          type="email"
-          required
-          placeholder="name@company.com"
-        />
-      </div>
-      <div className="form-row">
-        <InputField label="Project location" placeholder="City" />
-        <label className="field">
-          <span>
-            Property type<b>*</b>
-          </span>
-          <select required defaultValue="">
-            <option value="" disabled>
-              Select property type
-            </option>
-            <option>Apartment</option>
-            <option>Villa</option>
-            <option>Office</option>
-            <option>Hotel</option>
-            <option>Commercial building</option>
-            <option>Other</option>
-          </select>
-        </label>
-      </div>
-      <fieldset className="field">
-        <legend>Services required</legend>
-        <div className="service-chips">
-          {[
-            "Lighting",
-            "Security",
-            "Climate",
-            "Access",
-            "Energy",
-            "Custom IoT",
-          ].map((item) => (
-            <button
-              type="button"
-              className={selected.includes(item) ? "selected" : ""}
-              onClick={() =>
-                setSelected(
-                  selected.includes(item)
-                    ? selected.filter((x) => x !== item)
-                    : [...selected, item],
-                )
-              }
-              key={item}
-            >
-              {selected.includes(item) && <Icon name="check" size={14} />}
-              {item}
-            </button>
-          ))}
-        </div>
-      </fieldset>
-      <div className="form-row">
-        <label className="field">
-          <span>Project stage</span>
-          <select defaultValue="">
-            <option value="" disabled>
-              Select stage
-            </option>
-            <option>Planning</option>
-            <option>Under construction</option>
-            <option>Existing property</option>
-          </select>
-        </label>
-        <label className="field">
-          <span>Estimated timeline</span>
-          <select defaultValue="">
-            <option value="" disabled>
-              Select timeline
-            </option>
-            <option>Within 1 month</option>
-            <option>1–3 months</option>
-            <option>3–6 months</option>
-            <option>6+ months</option>
-          </select>
-        </label>
-      </div>
-      <label className="field">
-        <span>Approximate budget</span>
-        <select defaultValue="">
-          <option value="" disabled>
-            Select a range
-          </option>
-          <option>Under EGP 100K</option>
-          <option>EGP 100K–250K</option>
-          <option>EGP 250K–500K</option>
-          <option>EGP 500K–1M</option>
-          <option>EGP 1M+</option>
-        </select>
-      </label>
-      <label className="field">
-        <span>Project details</span>
-        <textarea
-          placeholder="Please describe the property, required systems and relevant programme information."
-          rows={4}
-        />
-      </label>
-      <fieldset className="field contact-method">
-        <legend>Preferred contact method</legend>
-        <div>
-          {["Phone", "WhatsApp", "Email"].map((item, i) => (
-            <label key={item}>
-              <input type="radio" name="contact" defaultChecked={i === 1} />
-              <span>{item}</span>
-            </label>
-          ))}
-        </div>
-      </fieldset>
-      <label className="consent">
-        <input type="checkbox" required />
-        <span>
-          <i>
-            <Icon name="check" size={13} />
-          </i>
-          I agree to be contacted regarding this request and accept the privacy
-          policy.
-        </span>
-      </label>
-      <Button type="submit" disabled={status === "loading"}>
-        {status === "loading" ? (
-          <>
-            <span className="spinner" /> Submitting request…
-          </>
-        ) : (
-          <>
-            Submit request <Icon name="arrow" />
-          </>
-        )}
-      </Button>
-    </form>
-  );
-}
 
 function Quote() {
   return (

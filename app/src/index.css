@@ -506,3 +506,6 @@ footer { position: relative; padding: 80px 0 28px; overflow: hidden; border-top:
   [dir="rtl"] .whatsapp-float { right: auto; left: 17px; }
   [dir="rtl"] .sector-overlay { right: 20px; }
 }
+.hp{
+  display:none;
+}
