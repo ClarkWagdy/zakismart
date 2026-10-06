@@ -1097,13 +1097,13 @@ function Quote() {
             text="Provide the key project details and a Zaki system designer will contact you to define the appropriate next step."
           />
           <div className="contact-list">
-            <a href="tel:+201000000000">
+            <a href="tel:+201024244589">
               <span>
                 <Icon name="phone" />
               </span>
               <div>
                 <small>PHONE</small>
-                <strong>+20 100 000 0000</strong>
+                <strong>+201024244589</strong>
               </div>
             </a>
             <a href="https://wa.me/201000000000">
@@ -1112,7 +1112,7 @@ function Quote() {
               </span>
               <div>
                 <small>WHATSAPP</small>
-                <strong>+20 100 000 0000</strong>
+                <strong>+201024244589</strong>
               </div>
             </a>
             <a href="mailto:info@zakismart.com">
@@ -1177,7 +1177,7 @@ function Footer() {
         <div>
           <strong>CONTACT</strong>
           <a href="mailto:info@zakismart.com">info@zakismart.com</a>
-          <a href="tel:+201000000000">+20 100 000 0000</a>
+          <a href="tel:+201024244589">+201024244589</a>
           <span>Cairo, Egypt</span>
           <div className="socials">
             <a href="#" aria-label="Instagram">
