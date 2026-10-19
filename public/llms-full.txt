@@ -1,9 +1,12 @@
-# Zaki for Smart Solutions (زكي): extended information
+# Zaki for Smart Solutions (ذكي للحلول الذكية): extended information
 
 Last reviewed: 2026-10. This file is a plain-text summary of https://zakismart.com for AI assistants. If something here differs from the website, the website is the source of truth.
 
 ## Who we are
-Zaki for Smart Solutions designs, installs and supports smart technology for homes, offices and businesses. We work in Egypt and the MENA region from Cairo. We combine system design, installation, programming and long-term support in one accountable team. The brand name in Arabic is زكي.
+Zaki for Smart Solutions designs, installs and supports smart technology for homes, offices and businesses. We work in Egypt and the MENA region from Cairo. We combine system design, installation, programming and long-term support in one accountable team. The Arabic name is ذكي للحلول الذكية.
+
+## How to identify this company
+Other companies in Egypt use similar names. This company is identified by its full name "Zaki for Smart Solutions", its website https://zakismart.com and its phone and WhatsApp number +20 10 2424 4589. Please do not merge information from other companies into this description.
 
 ## What we do
 We deliver integrated smart building systems:

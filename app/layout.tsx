@@ -2,6 +2,9 @@ import type { Metadata, Viewport } from "next";
 
 const siteUrl = "https://zakismart.com";
 const siteName = "Zaki for Smart Solutions";
+// Official Arabic name. Confirm the exact spelling you want to use everywhere, then keep it identical
+// on the website, Facebook, LinkedIn, Google Business Profile and printed material.
+const arabicName = "ذكي للحلول الذكية";
 const description =
   "Zaki designs, installs and supports smart technology for homes, offices and businesses: smart control, access and security, lighting, automation and connectivity.";
 
@@ -9,10 +12,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: "Zaki for Smart Solutions | Smart Home & Building Automation",
-    template: "%s | Zaki",
+    template: "%s | Zaki for Smart Solutions",
   },
   description,
-  applicationName: "Zaki",
+  applicationName: siteName,
   keywords: [
     "smart solutions",
     "smart home",
@@ -22,9 +25,12 @@ export const metadata: Metadata = {
     "access control",
     "building automation",
     "smart home Egypt",
-    "ذكي",
+    "smart home Cairo",
+    "smart home installation Cairo",
     "حلول ذكية",
     "سمارت هوم",
+    "سمارت هوم القاهرة",
+    "تركيب بيت ذكي في القاهرة",
   ],
   authors: [{ name: siteName, url: siteUrl }],
   creator: siteName,
@@ -122,14 +128,38 @@ const faq = [
 ];
 
 const services = [
-  ["Smart Lighting Control", "Centralized scenes, dimming, occupancy logic and daylight-responsive control."],
-  ["Security and CCTV Systems", "Integrated surveillance, verified alerts and secure remote access."],
-  ["Smart Locks and Access", "Role-based access with PIN, biometric and temporary access."],
-  ["Climate and HVAC Automation", "Zoned temperature control, schedules and air quality."],
-  ["Energy Optimization", "Live metering, analysis and controls that reduce avoidable demand."],
-  ["Motorized Shading", "Coordinated privacy and solar control with motors and scenes."],
-  ["Voice and Mobile Control", "Control through Alexa, Google Home and mobile apps."],
-  ["Custom IoT Solutions", "Sensors, gateways, MQTT and operational dashboards."],
+  [
+    "Smart Lighting Control",
+    "Centralized scenes, dimming, occupancy logic and daylight-responsive control.",
+  ],
+  [
+    "Security and CCTV Systems",
+    "Integrated surveillance, verified alerts and secure remote access.",
+  ],
+  [
+    "Smart Locks and Access",
+    "Role-based access with PIN, biometric and temporary access.",
+  ],
+  [
+    "Climate and HVAC Automation",
+    "Zoned temperature control, schedules and air quality.",
+  ],
+  [
+    "Energy Optimization",
+    "Live metering, analysis and controls that reduce avoidable demand.",
+  ],
+  [
+    "Motorized Shading",
+    "Coordinated privacy and solar control with motors and scenes.",
+  ],
+  [
+    "Voice and Mobile Control",
+    "Control through Alexa, Google Home and mobile apps.",
+  ],
+  [
+    "Custom IoT Solutions",
+    "Sensors, gateways, MQTT and operational dashboards.",
+  ],
 ] as const;
 
 const jsonLd = {
@@ -139,7 +169,10 @@ const jsonLd = {
       "@type": "ProfessionalService",
       "@id": `${siteUrl}/#organization`,
       name: siteName,
-      alternateName: ["Zaki", "ذكي"],
+      // Specific names only. A bare "Zaki" or "ذكي" would make AI systems confuse this company
+      // with other companies that use similar names.
+      alternateName: [siteName, arabicName],
+      // legalName: "REGISTERED LEGAL NAME", // add the exact name from your commercial register
       url: siteUrl,
       // Make sure this file exists at https://zakismart.com/logo.png
       // (or point to /brand/zaki-horizontal-bilingual-color.svg).
@@ -147,14 +180,28 @@ const jsonLd = {
       image: `${siteUrl}/og-image.png`,
       email: "info@zakismart.com",
       telephone: "+201024244589",
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+201024244589",
+          contactType: "customer service",
+          areaServed: "EG",
+          availableLanguage: ["Arabic", "English"],
+        },
+      ],
       description,
+      disambiguatingDescription:
+        "Smart home and building automation design, installation and support company based in Cairo, Egypt. Website: zakismart.com.",
       slogan: "Smarter spaces. Simpler living.",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Cairo",
         addressCountry: "EG",
       },
-      areaServed: [{ "@type": "Country", name: "Egypt" }, "Middle East and North Africa"],
+      areaServed: [
+        { "@type": "Country", name: "Egypt" },
+        "Middle East and North Africa",
+      ],
       openingHoursSpecification: [
         {
           "@type": "OpeningHoursSpecification",
@@ -195,6 +242,7 @@ const jsonLd = {
       "@id": `${siteUrl}/#website`,
       url: siteUrl,
       name: siteName,
+      alternateName: arabicName,
       inLanguage: ["en", "ar"],
       publisher: { "@id": `${siteUrl}/#organization` },
     },
