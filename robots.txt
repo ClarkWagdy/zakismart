@@ -1,0 +1,38 @@
+# zakismart.com
+# Option A (current): welcome everyone, including AI assistants and AI search engines.
+User-agent: *
+Allow: /
+
+# AI search and answer engines (these cite and link to the site)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# AI training crawlers (remove these lines if you do NOT want your content used for training)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://zakismart.com/sitemap.xml

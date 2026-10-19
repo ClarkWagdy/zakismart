@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://zakismart.com/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Add one <url> per page when you split the site, for example:
+  <url><loc>https://zakismart.com/services/smart-lighting</loc></url>
+  <url><loc>https://zakismart.com/residential</loc></url>
+  <url><loc>https://zakismart.com/faq</loc></url>
+  <url><loc>https://zakismart.com/ar/</loc></url>
+  and add hreflang links between the English and Arabic versions of each page. -->
+</urlset>

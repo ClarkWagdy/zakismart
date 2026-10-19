@@ -1118,7 +1118,7 @@ function Quote() {
                 <strong>+201024244589</strong>
               </div>
             </a>
-            <a href="https://wa.me/201000000000">
+            <a href="https://https://wa.me/+201024244589">
               <span>
                 <Icon name="message" />
               </span>
@@ -1213,7 +1213,7 @@ function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© 2026 Zaki Smart Spaces. All rights reserved.</span>
+        <span>© 2026 Zaki for Smart Solutions (ذكي). All rights reserved.</span>
         <span>Privacy · Terms · Legal</span>
       </div>
       <div className="footer-word">zaki</div>
@@ -1284,7 +1284,7 @@ export default function App() {
       <Footer />
       <a
         className="whatsapp-float"
-        href="https://wa.me/201000000000"
+        href="https://https://wa.me/+201024244589"
         aria-label="Contact us on WhatsApp"
       >
         <Icon name="message" />

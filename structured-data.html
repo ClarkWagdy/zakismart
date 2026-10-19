@@ -1,0 +1,62 @@
+<!-- Paste inside <head> of https://zakismart.com. Everything here matches content visible on the page.
+     Add "email" only when you decide on a public address. Do not add ratings or reviews unless they are real and verified. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://zakismart.com/#organization",
+      "name": "Zaki for Smart Solutions",
+      "alternateName": ["Zaki", "زكي"],
+      "url": "https://zakismart.com",
+      "logo": "https://zakismart.com/brand/zaki-horizontal-bilingual-color.svg",
+      "image": "https://zakismart.com/og-image.png",
+      "description": "Zaki designs, installs and supports smart technology for homes, offices and businesses: smart control, access and security, lighting, automation and connectivity.",
+      "telephone": "+201024244589",
+      "address": { "@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG" },
+      "areaServed": [ { "@type": "Country", "name": "Egypt" }, "Middle East and North Africa" ],
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "18:00" }
+      ],
+      "knowsLanguage": ["en", "ar"],
+      "sameAs": [ "https://www.facebook.com/zakiismart", "https://www.linkedin.com/company/zakiismart" ],
+      "knowsAbout": ["Smart home", "Home automation", "Building automation", "Smart lighting", "Access control", "CCTV", "Zigbee", "Matter", "KNX", "MQTT"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Smart home and IoT services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Smart Lighting Control", "description": "Centralized scenes, dimming, occupancy logic and daylight-responsive control." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Security and CCTV Systems", "description": "Integrated surveillance, verified alerts and secure remote access." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Smart Locks and Access", "description": "Role-based access with PIN, biometric and temporary access." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Climate and HVAC Automation", "description": "Zoned temperature control, schedules and air quality." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Energy Optimization", "description": "Live metering, analysis and controls that reduce avoidable demand." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Motorized Shading", "description": "Coordinated privacy and solar control with motors and scenes." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Voice and Mobile Control", "description": "Control through Alexa, Google Home and mobile apps." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom IoT Solutions", "description": "Sensors, gateways, MQTT and operational dashboards." } }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zakismart.com/#website",
+      "url": "https://zakismart.com",
+      "name": "Zaki for Smart Solutions",
+      "inLanguage": ["en", "ar"],
+      "publisher": { "@id": "https://zakismart.com/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://zakismart.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Can you automate an existing home?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We design retrofit systems that minimize wall work and disruption. Following a site survey, we specify the appropriate wired, wireless or hybrid approach." } },
+        { "@type": "Question", "name": "Will everything still work if the internet goes down?", "acceptedAnswer": { "@type": "Answer", "text": "Core functions such as lights, climate, locks, and scenes are designed to run locally. Internet is only needed for remote access and selected cloud integrations." } },
+        { "@type": "Question", "name": "Which smart home brands do you support?", "acceptedAnswer": { "@type": "Answer", "text": "We work across Matter, KNX, Zigbee, Z-Wave, Wi-Fi, and MQTT ecosystems, choosing reliable products that suit your project rather than locking you into one brand." } },
+        { "@type": "Question", "name": "How long does installation take?", "acceptedAnswer": { "@type": "Answer", "text": "A typical apartment takes 2 to 5 days. Villas and commercial spaces vary by scope. We provide a clear timeline before any work begins." } },
+        { "@type": "Question", "name": "Can I start small and expand later?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every system is designed modularly, so you can begin with lighting or security and add climate, shading, energy, and more over time." } },
+        { "@type": "Question", "name": "Do you provide support after installation?", "acceptedAnswer": { "@type": "Answer", "text": "Every project includes onboarding, documentation, and post-installation care. Our support plans add remote diagnostics, updates, and priority visits." } }
+      ]
+    }
+  ]
+}
+</script>
