@@ -10,7 +10,7 @@ Not verified: your live robots.txt, sitemap.xml, llms.txt and any structured dat
 - Contact details, working hours, and standards (Zigbee, Matter, KNX, MQTT...) are written in text.
 
 ## 2. Fix first (these change what AI says about you)
-1. **WhatsApp link is wrong.** The text shows +20 10 2424 4589 but the link opens wa.me/201000000000. Change it to https://wa.me/201024244589. A wrong number loses leads and confuses AI.
+1. **WhatsApp link is wrong.** The text shows +20 10 2424 4589 but the link opens wa.me/+201024244589. Change it to https://wa.me/201024244589. A wrong number loses leads and confuses AI.
 2. **Email is hidden.** The page shows "[email protected]" because of Cloudflare email obfuscation, so AI and crawlers cannot read it. Turn off "Email Address Obfuscation" in Cloudflare (Scrape Shield), or publish the address as plain text in the contact section.
 3. **Three different company names:** "Zaki for Smart Solutions" (title), "Zaki Smart Spaces" (footer), "ZAKI Smart Solutions" (our brochures). AI treats these as possibly different companies. Pick one official name and use it everywhere. Suggested: Zaki for Smart Solutions (زكي).
 4. **Unverified numbers and stories.** The page states 350+ projects, 9 years, 6.8K devices, 96% referrals, 12 cities, a 4.9 rating, three named client testimonials and three case studies with percentage savings. The case-study pictures are stock photos from Unsplash. If any of these are not real and documented, remove or replace them. AI assistants repeat what the page says, and false claims can harm trust and cause legal trouble. I did NOT put any of these numbers in the files below.
