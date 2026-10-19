@@ -1192,7 +1192,11 @@ function Footer() {
           <a href="tel:+201024244589">+201024244589</a>
           <span>Cairo, Egypt</span>
           <div className="socials">
-            <a href="#" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/zakiismart"
+              target="_blank"
+              aria-label="Instagram"
+            >
               IG
             </a>
             <a
