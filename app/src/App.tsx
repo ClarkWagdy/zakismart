@@ -1118,7 +1118,7 @@ function Quote() {
                 <strong>+201024244589</strong>
               </div>
             </a>
-            <a href="https://https://wa.me/+201024244589">
+            <a href="https://wa.me/+201024244589">
               <span>
                 <Icon name="message" />
               </span>

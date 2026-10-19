@@ -1,0 +1,47 @@
+# Zaki for Smart Solutions (زكي)
+
+> Zaki designs, installs and supports smart technology for homes, offices and businesses in Egypt and the MENA region: smart lighting, security and CCTV, smart locks and access control, climate and HVAC automation, energy optimization, motorized shading, voice and mobile control, and custom IoT. Based in Cairo, Egypt. Websites and materials are available in English and Arabic.
+
+Key facts:
+- Company name: Zaki for Smart Solutions (Arabic: زكي). Website: https://zakismart.com
+- Location: Cairo, Egypt. Serves Egypt and the MENA region.
+- Email: info@zakismart.com
+- Phone and WhatsApp: +20 10 2424 4589
+- Working hours: Sunday to Thursday, 09:00 to 18:00 (Cairo time). Enquiries are answered within 24 business hours.
+- Every project starts with a free site survey, followed by a technical offer, a financial offer and a contract.
+- Warranty: 5 years against manufacturing defects and misuse.
+- Supported standards and platforms: Zigbee, Z-Wave, Matter, KNX, MQTT, Wi-Fi, Amazon Alexa, Google Home.
+- Pricing is project-based and is given in the financial offer after the site survey. No public price list.
+
+## Services
+- [Smart Lighting Control](https://zakismart.com/#services): centralized scenes, dimming, occupancy logic and daylight-responsive control.
+- [Security and CCTV Systems](https://zakismart.com/#services): integrated surveillance, verified alerts, remote view and recording.
+- [Smart Locks and Access](https://zakismart.com/#services): role-based access with PIN, biometric and temporary access.
+- [Climate and HVAC Automation](https://zakismart.com/#services): zoned temperature control, schedules and air quality.
+- [Energy Optimization](https://zakismart.com/#services): live metering, alerts and reports.
+- [Motorized Shading](https://zakismart.com/#services): motorized curtains and shutters with scenes and sun-based control.
+- [Voice and Mobile Control](https://zakismart.com/#services): control through Alexa, Google Home and mobile apps.
+- [Custom IoT Solutions](https://zakismart.com/#services): sensors, gateways, MQTT and operational dashboards.
+
+## Sectors
+- [Residential](https://zakismart.com/#sectors): apartments and villas, new builds and retrofits.
+- [Commercial and Offices](https://zakismart.com/#sectors): access, lighting and analytics for offices.
+- [Hospitality](https://zakismart.com/#sectors): guest-room control, energy and guest access.
+
+## How we work
+- [Process](https://zakismart.com/#process): 1) free site survey and consultation, 2) technical design and proposal, 3) financial offer and contract, 4) installation, programming and commissioning, 5) handover, support and maintenance.
+
+## Frequently asked questions
+- [FAQ](https://zakismart.com/#faq): retrofit of existing homes, behavior when the internet is down, supported brands, installation time, starting small and expanding, and support after installation.
+
+## Contact
+- [Request a consultation](https://zakismart.com/#quote): project enquiry form (property type, services, stage, timeline, budget range).
+- WhatsApp: https://wa.me/201024244589
+- Facebook: https://www.facebook.com/zakiismart
+- LinkedIn: https://www.linkedin.com/company/zakiismart
+
+## Optional
+- [Extended information for AI assistants](https://zakismart.com/llms-full.txt)
+
+## بالعربي
+زكي (Zaki for Smart Solutions) شركة في القاهرة، مصر، بتصمم وبتركّب وبتدعم حلول البيت الذكي والمباني الذكية للشقق والفيلات والمكاتب والفنادق: إضاءة ذكية، كاميرات وأمان، أقفال وتحكم في الدخول، تكييف وتحكم في الحرارة، ترشيد الطاقة، ستاير موتورات، تحكم صوتي وبالموبايل، وحلول IoT مخصصة. كل مشروع بيبدأ بمعاينة مجانية للمكان، وبعدها عرض فني وعرض مالي ثم تعاقد. ضمان 5 سنين ضد عيوب الصناعة وسوء الاستخدام. التواصل: واتساب وتليفون +20 10 2424 4589.
