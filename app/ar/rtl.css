@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap");
+
+/* Arabic font everywhere (buttons/inputs don't inherit font-family by default) */
+html[lang="ar"] body,
+html[lang="ar"] button,
+html[lang="ar"] input,
+html[lang="ar"] select,
+html[lang="ar"] textarea,
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] small,
+html[lang="ar"] strong,
+html[lang="ar"] span,
+html[lang="ar"] p,
+html[lang="ar"] a {
+  font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, system-ui, sans-serif;
+}
+
+/* Letter-spacing and uppercase break Arabic letter joining, so turn them off */
+html[lang="ar"] * {
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+/* Directional arrows point the other way in RTL */
+html[dir="rtl"] .icon-arrow {
+  transform: scaleX(-1);
+}
+
+/* Text alignment for common blocks */
+html[dir="rtl"] .faq-question,
+html[dir="rtl"] .section-heading,
+html[dir="rtl"] .hero-copy {
+  text-align: right;
+}
+html[dir="rtl"] .section-heading.center {
+  text-align: center;
+}
