@@ -509,3 +509,36 @@ footer { position: relative; padding: 80px 0 28px; overflow: hidden; border-top:
 .hp{
   display:none;
 }
+
+
+.contact-method>div {
+  display: flex;
+  flex-wrap: wrap;
+  /* لو الشاشة ضيقة، العنصر كله ينزل سطر مش الكلمة */
+  align-items: center;
+  gap: 12px 24px;
+}
+
+.contact-method label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  /* "البريد الإلكتروني" على سطر واحد */
+  cursor: pointer;
+}
+
+.contact-method input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  flex: 0 0 18px;
+  /* نفس الحجم للتلاتة، مايتمددوش */
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.contact-method span {
+  white-space: nowrap;
+}

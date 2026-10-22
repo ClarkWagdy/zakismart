@@ -3,7 +3,7 @@ import { FormEvent, ReactNode, useEffect, useState } from "react";
 import "./index.css";
 import RequestForm from "./RequestForm";
 import { SeoFooter } from "../_seo/SeoFooter";
-type IconName =
+export type IconName =
   | "arrow"
   | "bolt"
   | "bulb"
@@ -353,75 +353,6 @@ function ThemeSwitch({
         </button>
       ))}
     </div>
-  );
-}
-
-function Navbar({
-  mode,
-  onTheme,
-  menu,
-  onMenu,
-  rtl,
-  onLanguage,
-}: {
-  mode: ThemeMode;
-  onTheme: (mode: ThemeMode) => void;
-  menu: boolean;
-  onMenu: () => void;
-  rtl: boolean;
-  onLanguage: () => void;
-}) {
-  return (
-    <header className="navbar">
-      <Logo />
-      <nav
-        className={menu ? "nav-links open" : "nav-links"}
-        aria-label="Primary navigation"
-      >
-        {[
-          ["Solutions", "sectors"],
-          ["Services", "services"],
-          ["Process", "process"],
-          ["Projects", "projects"],
-          ["FAQ", "faq"],
-        ].map(([item, id]) => (
-          <a href={`#${id}`} key={item} onClick={() => menu && onMenu()}>
-            {item}
-          </a>
-        ))}
-        <div className="mobile-nav-actions">
-          <div className="mobile-settings">
-            <ThemeSwitch mode={mode} onChange={onTheme} />
-            <button className="mobile-language" onClick={onLanguage}>
-              {rtl ? "العربية / EN" : "EN / العربية"}
-            </button>
-          </div>
-          <Button href="#quote">
-            Request a consultation <Icon name="arrow" />
-          </Button>
-        </div>
-      </nav>
-      <div className="nav-actions">
-        {/* <button
-          className="icon-btn language"
-          aria-label="Change language"
-          onClick={onLanguage}
-        >
-          {rtl ? "AR" : "EN"} <span>/ {rtl ? "EN" : "AR"}</span>
-        </button> */}
-        <ThemeSwitch mode={mode} onChange={onTheme} compact />
-        <Button href="#quote">
-          Request a consultation <Icon name="arrow" />
-        </Button>
-      </div>
-      <button
-        className="menu-btn icon-btn"
-        onClick={onMenu}
-        aria-label="Toggle menu"
-      >
-        <Icon name={menu ? "x" : "menu"} />
-      </button>
-    </header>
   );
 }
 
@@ -1166,53 +1097,12 @@ function Quote() {
 
 export default function App() {
  
-  const [clockTick, setClockTick] = useState(0);
-  const [menu, setMenu] = useState(false);
-  const [rtl, setRtl] = useState(false);
-  const isAutoLight = new Date().getHours() >= 6 && new Date().getHours() < 18;
-  const [mode, setMode] = useState<ThemeMode>("auto");
 
-  // Read the saved theme once, in the browser only
-  useEffect(() => {
-    const saved = localStorage.getItem("zaki-theme");
-    if (saved === "light" || saved === "dark" || saved === "auto") {
-      setMode(saved);
-    }
-  }, []);
+   
 
-  // Save when the user changes it
-  const changeMode = (next: ThemeMode) => {
-    setMode(next);
-    localStorage.setItem("zaki-theme", next);
-  };
-  const light = mode === "light" || (mode === "auto" && isAutoLight);
-  useEffect(() => {
-    document.documentElement.classList.toggle("light", light);
-    document.documentElement.dataset.theme = light ? "light" : "dark";
-    localStorage.setItem("zaki-theme", mode);
-  }, [light, mode, clockTick]);
-  useEffect(() => {
-    if (mode !== "auto") return;
-    const timer = window.setInterval(
-      () => setClockTick((tick) => tick + 1),
-      60000,
-    );
-    return () => window.clearInterval(timer);
-  }, [mode]);
-  useEffect(() => {
-    document.documentElement.dir = rtl ? "rtl" : "ltr";
-    document.documentElement.lang = rtl ? "ar" : "en";
-  }, [rtl]);
   return (
     <>
-      <Navbar
-        mode={mode}
-        onTheme={setMode}
-        menu={menu}
-        onMenu={() => setMenu(!menu)}
-        rtl={rtl}
-        onLanguage={() => setRtl(!rtl)}
-      />
+   
       <Hero />
       <TrustBar />
       <Services />
@@ -1226,7 +1116,7 @@ export default function App() {
       <Quote />
       <a
         className="whatsapp-float"
-        href="https://https://wa.me/+201024244589"
+        href="https://wa.me/+201024244589"
         aria-label="Contact us on WhatsApp"
       >
         <Icon name="message" />

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Footer from "./src/Footer";
+import Navbar from "./src/Navbar";
 
 const siteUrl = "https://zakismart.com";
 const siteName = "Zaki for Smart Solutions";
@@ -209,6 +210,7 @@ export default function RootLayout({
         />
       </head>
       <body suppressHydrationWarning>
+        <Navbar />
         {children}
         <Footer />
       </body>
