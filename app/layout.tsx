@@ -202,6 +202,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta
+          name="facebook-domain-verification"
+          content="oxmy7g6wp4119i2m4qztlkdr8n6ost"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
